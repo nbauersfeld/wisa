@@ -1,0 +1,38 @@
+Model: "model"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #   
+=================================================================
+ conv00 (Conv2D)             (None, 50, 50, 32)        320       
+                                                                 
+ pooling00 (MaxPooling2D)    (None, 25, 25, 32)        0         
+                                                                 
+ conv01 (Conv2D)             (None, 23, 23, 64)        18496     
+                                                                 
+ pooling01 (MaxPooling2D)    (None, 11, 11, 64)        0         
+                                                                 
+ flatten00 (Flatten)         (None, 7744)              0         
+                                                                 
+ upsampling00 (Dense)        (None, 128)               991360    
+                                                                 
+ dropout00 (Dropout)         (None, 128)               0         
+                                                                 
+ output00 (Dense)            (None, 38)                4902      
+                                                                 
+=================================================================
+Total params: 1,015,078
+Trainable params: 1,015,078
+Non-trainable params: 0
+_________________________________________________________________
+
+--- Optimizer
+name: SGD
+learning_rate: {'class_name': 'ExponentialDecay', 'config': {'initial_learning_rate': 0.01, 'decay_steps': 1900, 'decay_rate': 0.98, 'staircase': True, 'name': 'decay'}}
+decay: 0.0
+momentum: 0.9
+nesterov: False
+--- Loss
+reduction: auto
+name: loss
+from_logits: False
+label_smoothing: 0.0
+axis: -1
