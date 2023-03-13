@@ -1,7 +1,9 @@
 # wisa
-Wafer-to-wafer variations
+Wafer-to-wafer variations<br/><br/>
 
-wisa.ins.4: CNN insides
-wisa.net.4: CNN at work
-wisa.aug.4: data set augmentation toolset
+Source code to paper<br/><br/>
+
+wisa.ins.4: CNN insides<br/>
+wisa.net.4: CNN at work<br/>
+wisa.aug.4: data set augmentation toolset<br/>
 wisa.pip.4: statistical studies
